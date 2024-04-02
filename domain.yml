@@ -1,0 +1,54 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  
+
+responses:
+  utter_greet:
+    - text: "Hola, 👋 ¡te doy la bienvenida a la ETITC! para mi es un placer y un compromiso servirte."
+      buttons:
+        - title: "Ingresa a la página de la institución *dando click* [aquí]"
+          payload: "https://etitc.edu.co/es/"
+    - text: "¡Hola! 😄 Es un placer tenerte aquí. Si tienes alguna pregunta sobre nuestros programas académicos, admisiones o cualquier otro tema, no dudes en preguntar."
+      buttons:
+        - title: "Ingresa a la página de la institución *dando click* [aquí]"
+          payload: "https://etitc.edu.co/es/"
+    - text: "Hola,😃 Soy tu asistente virtual y me encanta estar aquí para ayudarte. ¡Cuenta conmigo!"
+      buttons:
+        - title: "Ingresa a la página de la institución *dando click* [aquí]"
+          payload: "https://etitc.edu.co/es/"
+    - text: "¡Hola! 😃 Soy el asistente virtual de nuestra universidad. ¿En qué puedo ayudarte hoy? Puedes preguntarme sobre nuestros cursos, eventos, o cualquier otra cosa que necesites saber."
+      buttons:
+        - title: "Ingresa a la página de la institución *dando click* [aquí]"
+          payload: "https://etitc.edu.co/es/"
+    - text: "¡Hola! 😃 Soy tu asistente virtual y me encanta poder ayudarte. ¿Hay algo específico en lo que pueda ayudarte?"
+      buttons:
+        - title: "Ingresa a la página de la institución *dando click* [aquí]"
+          payload: "https://etitc.edu.co/es/"
+          
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
